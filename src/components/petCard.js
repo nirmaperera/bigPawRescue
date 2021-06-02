@@ -70,8 +70,6 @@ const PetCard = ({data, check, setCheck}) => {
         }
 
         if (!checked) {
-          console.log('helll');
-          console.log(check.filter(item => item !== id), 'check');
           setCheck(check.filter(item => item !== id));
           dispatch(allActions.petImages.deleteImage(id));
         }

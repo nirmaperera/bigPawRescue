@@ -1,5 +1,4 @@
 import {useState, useEffect} from 'react';
-import {useSelector} from 'react-redux';
 import styled from 'styled-components';
 import Header from "./header";
 import Search from "./search";
@@ -30,8 +29,6 @@ function Home() {
   const [petData, setPetData] = useState([]);
   const [search, setSearch] = useState('');
   const [loading, setLoading] =useState(true);
-  let images = useSelector(state => state.arrayImages.arrayImages);
-  console.log(images, 'images');
 
   useEffect(() => {
     getPets(setPetData, setLoading);

@@ -14,11 +14,11 @@ const List = styled.ul `
     list-style: none;
     display: flex;
     align-items: center;
-    width: 15%;
+    width: 20%;
     justify-content: space-between;
 
     @media ${device.laptop} {
-        width: 50%;
+        width: 60%;
     }
 `;
 
@@ -41,7 +41,7 @@ const NavBar = () => {
     return (
         <Navbar>
             <List>
-                 <ListItem logo href="/">Pets.io</ListItem>
+                 <ListItem logo href="/">Big Paws</ListItem>
                  <ListItem href="/about">About</ListItem>
             </List>
         </Navbar>

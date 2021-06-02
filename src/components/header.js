@@ -21,7 +21,7 @@ const HeaderContent = styled.div `
     top:180px;
     @media ${device.laptop} {
         left: 40px;
-        width: 250px;
+        width: 60%;
     }
 `;
 
@@ -32,11 +32,17 @@ const Title = styled.h1 `
     letter-spacing: 2px;
     font-size: 2.5rem;
     line-height: 0.1;
+    @media ${device.laptop} {
+        font-size: 2rem;
+    }
 `;
 
 const Subtitle = styled.h4 `
     color:${colors.primaryTan};
     font-size: 1.2rem;
+    @media ${device.laptop} {
+        font-size: 1rem;
+    }
 `;
 
 const Header = () => {

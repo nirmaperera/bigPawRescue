@@ -27,6 +27,8 @@ const ImageContainer = styled.div`
     display: flex;
     padding: 0;
     align-self: flex-end;
+    position: relative;
+    z-index: 5;
 `;
 
 const Header = styled.div`
@@ -66,7 +68,7 @@ const FootPrintImg = styled.img `
     ${({three}) =>
         three && css `
             position: absolute;
-            left: 400px;
+            left: 350px;
             transform: rotate(-20deg);
             --animate-duration: 5s;
             opacity: 0.6 !important;
